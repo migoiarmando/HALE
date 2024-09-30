@@ -1,0 +1,128 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Inter, sans-serif;
+
+     /* Disable the highlight */
+     -webkit-user-select: none;
+     -khtml-user-select: none;
+     -moz-user-select: none;
+     -ms-user-select: none;
+     -o-user-select: none;
+     user-select: none;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #002E4F;
+    color: #F1F2F2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*Text Sizes*/
+.font-size-24{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.font-size-16{
+    font-size: 14px;
+    color: #ABABAB;
+}
+.font-size-20{
+    font-size: 20px;
+    color: #f1f1f1;
+}
+
+.font-size-form-header{
+    font-size: 14px;
+    color: #f8f8f8;
+    font-weight: 600;
+    
+}
+/*Splash Screen*/
+.logo-container{
+    margin: 1em 0;
+}
+
+.splash-container{
+    margin-top: -50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.option-container{
+    display: flex;
+    gap: 50px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Student Image Container*/
+.student-img{
+    object-position: -250px 30px;  
+    width: 600px;
+    transition: all 0.5s;
+}
+
+.student-container{
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    background-color: #003459;
+    border-radius: 40px;
+    margin: 1rem 0;
+    
+}
+
+.student-container:hover img{
+    transform: scale(1.1);
+    transition: all 0.5s;
+    background-color: #00233B;
+}
+
+/*Health Staff Image Container*/
+.health-staff-img{
+    object-position: -100px 30px;
+    width: 500px;
+    transition: all 0.5s;
+}
+
+.health-staff-container{
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    background-color: #003459;
+    border-color: transparent;
+    border-radius: 40px;
+     margin: 1rem 0;
+}
+
+.health-staff-container:hover img{
+    transform: scale(1.1);
+    box-shadow: 100px 100px #F1F2F2;
+    transition: all 0.5s;
+    background-color: #00233B;
+}
+
+
+.go-back-btn{
+    transform: scale(0.7);
+    transition: all 0.5s;
+}
+
+.go-back-btn:hover{
+    transform: scale(0.65);
+    opacity: 0.2;
+    transition: all 0.5s;
+}

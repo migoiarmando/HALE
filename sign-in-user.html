@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hale | Sign-up Student</title>
+    <link rel="stylesheet" href="user-css/static-forms.css" />
+    <link rel="stylesheet" href="user-css/form-style.css" />
+    <link rel="stylesheet" href="user-css/splash-styles.css" />
+    <link rel="icon" href="./assets/hale-logo.svg" />
+    <link rel="stylesheet" href="user-css/transitions.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <style>
+      body {
+        display: flex;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="information-container">
+      <img src="./assets/adnu-hale-full.svg" class="adnu-hale-logo" /> <br />
+      <div class="about-hale-container">
+        <img src="./assets/adnu-hale-logo-white.svg" style="width: 20px" />
+        <span style="font-weight: 800">About ADNU-HALE</span>
+        <p class="font-size-16">
+          A Modernized AdNU-based Medical Information System <br />
+          designed to digitalize the process of the Office of Medical <br />
+          Health in Ateneo de Naga University.
+        </p>
+      </div>
+    </div>
+
+    <div class="form-container">
+      <span class="font-size-24">Log-in as User</span> <br />
+      <a href=""><img src="./assets/mail-button.svg" class="mail-button" /></a>
+      <br />
+      <img src="./assets/manual-sign-in-phrase.svg" class="mail-button" />
+      <br />
+      <form
+        id="sign-in-form"
+        method="POST"
+        autocomplete="off"
+        class="form"
+        onsubmit="return false;"
+      >
+        <label for="idnum" class="font-size-form-header"
+          >Email or ID Number</label
+        >
+        <br />
+        <input
+          type="text"
+          id="idnum"
+          name="idnum"
+          class="text-form"
+          placeholder="jdoe@gbox.adnu.edu.ph | 202400000"
+          required
+        />
+        <br />
+
+        <label for="password" class="font-size-form-header">Password </label>
+        <br />
+        <div class="input-with-icon">
+          <input
+            type="password"
+            name="password"
+            id="password"
+            class="text-form"
+            placeholder="Must be 8-15 characters"
+            required
+          />
+          <span class="input-icon" onclick="togglePasswordVisibility()">
+            <!-- Replace 'your-icon.png' with the path to your eye icon file -->
+            <img
+              src="assets/open-eye.svg"
+              alt="Show/Hide Password"
+              width="20"
+              height="20"
+              id="togglePassword"
+            />
+          </span>
+        </div>
+
+        <div style="margin-bottom: 10px">
+          <a href="" style="color: white; font-size: 10px"
+            ><u> Forgot Password? </u></a
+          >
+          <br />
+        </div>
+        <button class="btn" type="submit">Sign in</button>
+        <br />
+        <br />
+      </form>
+      <a href="sign-up-user.html" style="color: white; font-size: 12px">
+        <p>Don't have an account yet? <u>Sign up</u></p>
+      </a>
+    </div>
+    <script src="scripts/authentication.js"></script>
+  </body>
+</html>

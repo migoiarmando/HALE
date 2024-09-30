@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hale |  Book Appointment</title>
+   
+    <link rel="stylesheet" href="user-css/book-appointments.css" />
+    <link rel="stylesheet" href="user-css/users-landing-page.css" />
+
+    <link rel="stylesheet" href="user-css/landing-page-styles.css" />
+    <link rel="stylesheet" href="user-css/transitions.css" />
+    <link rel="icon" href="assets/hale-logo.svg">
+
+</head>
+<body>
+
+    <!--Top Navigation-->
+    <div class="navigation-container">
+     
+        <div  class="main-logo-container"alt="">
+          <img src="assets/adnu-white-nav.svg">
+          <div class="logo-container">
+            <a href="user-landing-page.html">
+              <img src="./assets/hale-logo-nav.svg" />
+            </a>
+          </div>
+          
+        </div>
+     
+      <div id="pst-container">
+        <div id="pst-time" class="time-style"></div>
+        <a href="">
+          <img
+            src="assets/notification-icon.svg"
+            class="logo-container"
+            alt=""
+          />
+        </a>
+        <a href="user-profile-page.html">
+          <img src="assets/account-icon.svg" alt="" class="logo-container" />
+        </a>
+      </div>
+    </div>
+
+    <!--Side Menu-->
+    <div class="menu-container">
+      <div class="nav-aside">
+        <div class="user-profile" id="profile-picture-preview"></div>
+
+        <!-- use database here for name and ID -->
+        <div class="user-info">
+          <span id="full-name" style="font-weight: 700">User</span>
+          <span style="font-weight: 200">Student</span>
+          <span id="user-id">ID: 202200123</span>
+        </div>
+
+        <hr class="nav-aside-hr-line" />
+
+        <div class="menu-section">
+          <span class="nav-aside-headers">MENU</span>
+          <a href="user-landing-page.html">
+            <div class="menu-items" id="home-link">
+              <img src="assets/menu-icons/home.svg" class="menu-icons" alt="" />
+              <span>Home</span>
+            </div>
+          </a>
+
+          <a href="appointment-history.html">
+            <div class="menu-items" id="appointments-link">
+              <img
+                src="assets/menu-icons/appointments.svg"
+                class="menu-icons"
+                alt=""
+              />
+              <span>Appointments</span>
+            </div>
+          </a>
+
+          <a href="404.html">
+            <div class="menu-items">
+              <img
+                src="assets/menu-icons/document.svg"
+                class="menu-icons"
+                alt=""
+              />
+              <span>Submit Documents</span>
+            </div>
+          </a>
+        </div>
+
+        <hr class="nav-aside-hr-line" />
+
+        <div class="general-section">
+          <span class="nav-aside-headers">GENERAL</span>
+          <a href="user-profile-page.html">
+            <div class="menu-items">
+              <img
+                src="assets/menu-icons/setting.svg"
+                class="menu-icons"
+                alt=""
+              />
+              <span>Settings</span>
+            </div>
+          </a>
+
+          <a href="about-hale.html">
+            <div class="menu-items">
+              <img src="assets/menu-icons/help.svg" class="menu-icons" alt="" />
+              <span>About</span>
+            </div>
+          </a>
+
+          <a href="#" id="logout-button">
+            <div class="menu-items">
+              <img
+                src="assets/menu-icons/logout.svg"
+                class="menu-icons"
+                alt=""
+              />
+              <span>Logout</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- Main Content -->
+    <div class="book-appointment-container">
+
+        <div class="book-appointment">
+            <span class="m-headers">Appointments</span> <br>
+            <span class="s-headers">BOOK AN APPOINTMENT</span>
+            <br> <br>
+            <p>Select your preferred date and time for your appointment on the list below. You will receive a confirmation via email and the notification in the website</p>
+        </div>
+    
+         <div class="select-service highlight">
+            <div class="service">
+                <img src="assets/process-1.svg" style="width: 1.25rem; margin-right: 0.5rem;">
+                <strong>Select a Service</strong>
+            </div>
+            <br>
+            <br>
+            <div class="button-container">
+                <div class="health-checkup">
+                    <button onclick="selectService(this, 'Health-Checkup')">Health Checkup</button>
+                </div>
+                <div class="medical-certificate">
+                    <button onclick="selectService(this, 'Dental Checkup')">Dental Checkup</button>
+                </div>
+            </div>
+        </div>
+    
+        <div class="calendar disabled">
+            <div class="calendar-container">
+                <div class="service">
+                    <div class="a-date-cont">
+                        <img src="assets/process-2.svg" style="width: 1.25rem; margin-right: 0.5rem;">
+                        <strong>Available Dates</strong>
+                    </div>
+                    <div id="month-year" class="month-year"></div>
+                </div>
+                <div class="days">
+                    <div>Mon</div>
+                    <div>Tue</div>
+                    <div>Wed</div>
+                    <div>Thu</div>
+                    <div>Fri</div>
+                    <div>Sat</div>
+                    <div>Sun</div>
+                </div>
+                <div class="dates">
+                    <div class="date" onclick="selectDate(this, '2024-07-01')">1</div>
+                    <div class="date" onclick="selectDate(this, '2024-07-02')">2</div>
+                    <div class="date" onclick="selectDate(this, '2024-07-03')">3</div>
+                    <div class="date" onclick="selectDate(this, '2024-07-04')">4</div>
+                    <div class="date" onclick="selectDate(this, '2024-07-05')">5</div>
+                    <div class="date" onclick="selectDate(this, '2024-07-06')">6</div>
+                    <div class="date" onclick="selectDate(this, '2024-07-07')">7</div>
+                    <div class="date" onclick="selectDate(this, '2024-07-08')">8</div>
+                    <div class="date" onclick="selectDate(this, '2024-07-09')">9</div>
+                    <div class="date" onclick="selectDate(this, '2024-07-10')">10</div>
+                    <div class="date" onclick="selectDate(this, '2024-07-11')">11</div>
+                    <div class="date" onclick="selectDate(this, '2024-07-12')">12</div>
+                    <div class="date" onclick="selectDate(this, '2024-07-13')">13</div>
+                    <div class="date" onclick="selectDate(this, '2024-07-14')">14</div>
+                    <div class="date" onclick="selectDate(this, '2024-07-15')">15</div>
+                    <div class="date" onclick="selectDate(this, '2024-07-16')">16</div>
+                    <div class="date" onclick="selectDate(this, '2024-07-17')">17</div>
+                    <div class="date" onclick="selectDate(this, '2024-07-18')">18</div>
+                    <div class="date" onclick="selectDate(this, '2024-07-19')">19</div>
+                    <div class="date" onclick="selectDate(this, '2024-07-20')">20</div>
+                    <div class="date" onclick="selectDate(this, '2024-07-21')">21</div>
+                    <div class="date" onclick="selectDate(this, '2024-07-22')">22</div>
+                    <div class="date" onclick="selectDate(this, '2024-07-23')">23</div>
+                    <div class="date" onclick="selectDate(this, '2024-07-24')">24</div>
+                    <div class="date" onclick="selectDate(this, '2024-07-25')">25</div>
+                    <div class="date" onclick="selectDate(this, '2024-07-26')">26</div>
+                    <div class="date" onclick="selectDate(this, '2024-07-27')">27</div>
+                    <div class="date" onclick="selectDate(this, '2024-07-28')">28</div>
+                    <div class="date" onclick="selectDate(this, '2024-07-29')">29</div>
+                    <div class="date" onclick="selectDate(this, '2024-07-30')">30</div>
+                    <div class="date" onclick="selectDate(this, '2024-07-31')">31</div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="time-slots disabled">
+            <div class="slots-container">
+                <div class="service">
+                    <img src="assets/process-3.svg" style="width: 1.25rem; margin-right: 0.5rem;">
+
+                    <p><strong>Available Time Slots</strong></p>
+                </div>
+                <p class="slot-text">Morning Time Slots</p>
+                <div class="button-container">
+                    <div class="time-col-one">
+                        <button onclick="selectTime(this, '08:00 AM')">8:00 AM</button>
+                        <button onclick="selectTime(this, '08:30 AM')">8:30 AM</button>
+                        <button onclick="selectTime(this, '09:00 AM')">9:00 AM</button>
+                        <button onclick="selectTime(this, '09:30 AM')">9:30 AM</button>
+                    </div>
+                    <div class="time-col-two">
+                        <button onclick="selectTime(this, '10:00 AM')">10:00 AM</button>
+                        <button onclick="selectTime(this, '10:30 AM')">10:30 AM</button>
+                        <button onclick="selectTime(this, '11:00 AM')">11:00 AM</button>
+                        <button onclick="selectTime(this, '11:30 AM')">11:30 AM</button>
+                    </div>  
+                </div>
+            </div>
+        </div>
+        
+        <div class="about-appointment">
+            <div class="about-container">
+                <p class="about-text">
+                    <div class="about-service">
+                        <img src="assets/process-info.svg" class="process-states">
+                        <strong class="about">About the Online Appointment</strong>
+                    </div>
+                   
+                    <div class="about-text-paragraph">
+                        Your data will be always secured with us. We use advanced encryption and comply with all medical privacy regulations to protect your information.
+                    </div> <br>
+                </p>
+            </div>
+        </div>
+    
+        <div class="action-buttons">
+            <div class="cancel-container">
+                <a href="user-landing-page.html">
+                    <button class="cancel-button">CANCEL</button>
+                </a>
+            </div>
+            <div class="next-container">
+                <a href="javascript:void(0);">
+                    <button class="next-button" onclick="confirmAppointment()">NEXT</button>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <script src="scripts/date.js"></script>
+    <script src="scripts/clock-script.js"></script>
+    <script src="scripts/appointments.js"></script>
+    <script src="scripts/load-user-info.js"></script>
+    <script src="scripts/appointments-manager.js"></script>
+    <script src="scripts/profile-picture-updater.js"></script>
+</body>
+</html>

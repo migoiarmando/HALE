@@ -1,0 +1,27 @@
+/*404 Styles*/
+body{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    margin: 0; 
+}
+
+.error-container{
+    margin: 0 auto;
+    justify-self: center;
+    align-self: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.error-container span{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #404040;
+}
+
+.error-container p{
+    font-size: 0.75rem;
+    color: #787878;
+}

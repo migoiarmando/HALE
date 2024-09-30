@@ -1,0 +1,67 @@
+.confirm-appointment-container{
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+.user-landing{
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+.book-appointment-container{
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+.landing-page{
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+.appointment-health-staff-container{
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+.appointments{
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+.splash-container{
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+.form-container{
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+.about{
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+.appointment-history-container{
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+.main-setting-containe{
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+    
+}
+
+.error-container{
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in-out forwards;
+}

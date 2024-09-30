@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hale | Home Page</title>
+    <link rel="stylesheet" href="user-css/users-landing-page.css" />
+    <link rel="stylesheet" href="user-css/landing-page-styles.css" />
+    <link rel="stylesheet" href="user-css/transitions.css" />
+    <link rel="icon" href="assets/hale-logo.svg"/>
+
+  </head>
+  <body>
+    <!--Top Navigation-->
+    <div class="navigation-container">
+     
+        <div  class="main-logo-container"alt="">
+          <img src="assets/adnu-white-nav.svg" >
+          <div class="logo-container">
+            <a href="user-landing-page.html">
+              <img src="./assets/hale-logo-nav.svg"  />
+            </a>
+          </div>
+          
+        </div>
+     
+      <div id="pst-container">
+        <div id="pst-time" class="time-style"></div>
+        <a href="">
+          <img
+            src="assets/notification-icon.svg"
+            class="logo-container"
+            alt=""
+          />
+        </a>
+        <a href="user-profile-page.html">
+          <img src="assets/account-icon.svg" alt="" class="logo-container" />
+        </a>
+      </div>
+    </div>
+
+    <!--Side Menu-->
+    <div class="menu-container">
+      <div class="nav-aside">
+        <div class="user-profile" id="profile-picture-preview"></div>
+
+        <!-- use database here for name and ID -->
+        <div class="user-info">
+          <span id="full-name" style="font-weight: 700">User</span>
+          <span style="font-weight: 200">Student</span>
+          <span id="user-id">ID: 202200123</span>
+        </div>
+
+        <hr class="nav-aside-hr-line" />
+
+        <div class="menu-section">
+          <span class="nav-aside-headers">MENU</span>
+          <a href="user-landing-page.html">
+            <div class="menu-items" id="home-link">
+              <img src="assets/menu-icons/home.svg" class="menu-icons" alt="" />
+              <span>Home</span>
+            </div>
+          </a>
+
+          <a href="appointment-history.html">
+            <div class="menu-items" id="appointments-link">
+              <img
+                src="assets/menu-icons/appointments.svg"
+                class="menu-icons"
+                alt=""
+              />
+              <span>Appointments</span>
+            </div>
+          </a>
+
+          <a href="404.html">
+            <div class="menu-items">
+              <img
+                src="assets/menu-icons/document.svg"
+                class="menu-icons"
+                alt=""
+              />
+              <span>Submit Documents</span>
+            </div>
+          </a>
+        </div>
+
+        <hr class="nav-aside-hr-line" />
+
+        <div class="general-section">
+          <span class="nav-aside-headers">GENERAL</span>
+          <a href="user-profile-page.html">
+            <div class="menu-items">
+              <img
+                src="assets/menu-icons/setting.svg"
+                class="menu-icons"
+                alt=""
+              />
+              <span>Settings</span>
+            </div>
+          </a>
+
+          <a href="about-hale.html">
+            <div class="menu-items">
+              <img src="assets/menu-icons/help.svg" class="menu-icons" alt="" />
+              <span>About</span>
+            </div>
+          </a>
+
+          <a href="#" id="logout-button">
+            <div class="menu-items">
+              <img
+                src="assets/menu-icons/logout.svg"
+                class="menu-icons"
+                alt=""
+              />
+              <span>Logout</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+        <!--User Landing-->
+        <div class="user-landing">
+          <div class="user-header">
+              <img src="assets/adnu-pillars-backdrop-2.svg" class="ateneo-image">
+  
+              <div class="welcome-text">
+                  <strong>Hello, User!</strong>
+                  <p>“Friend, go up higher.” -Luke 14:10 KJV</p>
+              </div>
+          </div>
+  
+          <div class="main-user-containter">
+              <div class="services-container">
+                  <div class="headers">
+                      <span class="m-headers">Home</span>
+                      <span class="s-headers">OVERVIEW</span>
+                      
+                  </div>
+  
+                  <div class="section-header">
+                      <span class="section-title">Medical Services Offered</span>
+                      <div>
+                          <a href="">
+                              <span class="section-subtitle">View Other Services</span>
+                              <img src="user-assets/view-more.svg" alt="">
+                          </a>
+                      </div>
+                  </div>
+                  
+                  <div class="medical-services">
+                      <div class="health-checkup">
+                          <a href="user-appointment-page.html" >
+                              <div class="option-container">
+                                  <img src="user-assets/health-checkup.svg" alt="">
+                                  <div>
+                                      <p>Set an Appointment for a</p>
+                                      <span>Health Checkup</span>
+                                  </div>
+                              </div>
+                          </a>
+                      </div>
+                      
+                      <div class="health-checkup">
+                          <a href="404.html">
+                              <div class="option-container-one" class="health-checkup">
+                                  <img src="user-assets/med-cert.svg" alt="">
+                                  <div>
+                                      <p>Request for a</p>
+                                      <span>Medical Certificate</span>
+                                  </div>
+                              </div>
+                          </a>
+                      </div>
+                      <div class="health-checkup">
+                          <a href="404.html">
+                              <div class="option-container-two" class="health-checkup">
+                                  <img src="user-assets/dental-teeth.svg" alt="">
+                                  <div>
+                                      <p>Set an Appointment for</p>
+                                      <span>Dental Services</span>
+                                  </div>
+                              </div>
+                          </a>
+                      </div>
+                  </div>
+      
+                  <div class="section-header">
+                      <span class="section-title">Health Staff Duty Schedule</span>
+                  </div>
+                 
+                  <div class="health-staff-duty-container">
+                      <div class="health-staff-schedule">
+                          <!--  -->
+                         
+                          <div class="staff-container" id="staff1" onclick="selectStaff(0)">
+                              <img src="user-assets/user-healthstaff.svg" alt="">
+                              <div>
+                                  <span>Merlee Alarcon, RN</span>
+                                  <p>AHEHSO Administrator</p>
+                              </div>
+                          </div>
+                          <div class="staff-container" id="staff2" onclick="selectStaff(1)">
+                              <img src="user-assets/user-healthstaff.svg" alt="">
+                              <div>
+                                  <span>Vanessa Federis, RN</span>
+                                  <p>Program Coordinator</p>
+                              </div>
+                          </div>
+                    
+                          
+                          <div class="staff-container" id="staff3" onclick="selectStaff(2)">
+                              <img src="user-assets/user-healthstaff.svg" alt="">
+                              <div>
+                                  <span>Dr. Theone Ramirez</span>
+                                  <p>School Physician</p>
+                              </div>
+                          </div>
+                          
+                          <div class="staff-container" id="staff4" onclick="selectStaff(3)">
+                              <img src="user-assets/user-healthstaff.svg" alt="">
+                              <div>
+                                  <span>Dr. Miriam Daluro</span>
+                                  <p>School Physician</p>
+                              </div>
+                          </div>
+                          
+                          <div class="staff-container" id="staff5" onclick="selectStaff(4)">
+                              <img src="user-assets/user-healthstaff.svg" alt="">
+                              <div>
+                                  <span>Dr. Rein Gapit-Perez</span>
+                                  <p>School Dentist</p>
+                              </div>
+                          </div>
+                          
+                          <div class="staff-container" id="staff6" onclick="selectStaff(5)">
+                              <img src="user-assets/user-healthstaff.svg" alt="">
+                              <div>
+                                  <span>Dr. Gracia Antonio</span>
+                                  <p>School Dentist</p>
+                              </div>
+                          </div>
+                          
+                          <div class="staff-container" id="staff7" onclick="selectStaff(6)">
+                              <img src="user-assets/user-healthstaff.svg" alt="">
+                              <div>
+                                  <span>Metchill Hallare, RN</span>
+                                  <p>School Nurse</p>
+                              </div>
+                          </div>
+                          
+                          <div class="staff-container" id="staff8" onclick="selectStaff(7)">
+                              <img src="user-assets/user-healthstaff.svg" alt="">
+                              <div>
+                                  <span>Mark Solano, RN</span>
+                                  <p>School Nurse</p>
+                              </div>
+                          </div>
+                          
+                      </div>
+                      <div class="health-staff-chosen">
+                          <div class="staff-chosen">
+                              <div class="staff-chosen-details">
+                                  <span>Merlee Alarcon, RN</span>
+                                  <p>AHEHSO Administrator</p>
+                              </div>
+                              <div class="staff-specific-schedule">
+                                  <span>Monday to Friday</span>
+                                  <p>9:00AM to 5:00PM</p>
+                                  <br>
+                                  <span>Saturdays</span>
+                                  <p>8:00AM to 12:00PM</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                
+          </div>
+          <div class="office-hours-container">
+  
+              <div class="office-hours">
+                  <div>
+                      <img src="user-assets/office-hours.svg" alt="">
+                      <span class="section-title">Office Hours</span>
+                  </div>
+                  
+                  <div class="office-status">
+                      <span>Status</span>
+                      <div class="status">
+                          <img src="user-assets/open-door.svg" alt="">
+                          <p>Open</p>
+                      </div>
+                  </div>
+              </div> 
+              <div class="ahehso-schedule">        
+                  <div class="office-schedule-container">
+                      <p>The Ateneo Higher Education Health Services Office is available during Regular Semester:</p>
+                      <div class="office-schedule">
+                          <div>
+                              <span>Monday to Friday</span>
+                              <p>7:30AM to 8:30PM</p>
+                          </div>
+                          <div>
+                              <span>Saturdays</span>
+                              <p>7:30AM to 8:30PM</p>
+                          </div>
+                      </div>
+                      <div>
+                          <img src="user-assets/location.svg" alt="">
+                          <span>Ground Floor, Fr. Burns, S.J., Building </span>
+                      </div>
+                  </div>
+              </div> 
+              <span class="trademark">© 2024 Ateneo de Naga University</span>
+  
+          </div>
+          
+      </div>
+    <script src="scripts/staff-schedule-carousel.js"></script>
+    <script src="scripts/clock-script.js"></script>
+    <script src="scripts/user-landing-refresh.js"></script>
+    <script src="scripts/profile-picture-updater.js"></script>
+  </body>
+</html>

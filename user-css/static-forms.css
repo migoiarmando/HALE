@@ -1,0 +1,60 @@
+/* styles.css */
+
+/* Style for form labels */
+label {
+    font-weight: bold;
+}
+
+/* Style for form input fields */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 330px;
+    height: 35px;
+    border: 0.5px solid #dfdfdf;
+    border-radius: 10px;
+    background-color: transparent;
+    color:#dfdfdf;
+    margin: 0.5rem 0 1rem 0;
+    padding-left: .5em;
+}
+
+/* Style for form submit button */
+input[type="submit"] {
+    width: 340px;
+    height: 35px;
+    border-radius: 10px;
+    background-color: #F1F2F2;
+    color: #1F4276;
+
+    border-color: transparent;
+    font-weight: 700;
+}
+/* Style for error messages */
+.error-message {
+    color: red;
+    font-size: 14px;
+}
+
+.go-back-btn{
+    transition: all 0.5s;
+}
+
+.go-back-btn:hover{
+    transform: translateX(10px);
+    transition: all 0.5s;
+}
+
+.input-with-icon {
+    position: relative;
+    display: inline-block;
+  }
+
+
+  .input-icon {
+    position: absolute;
+    right: 10px; /* Adjust icon position */
+    top: 47%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }

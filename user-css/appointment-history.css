@@ -1,0 +1,281 @@
+.appointment-history-container{
+    margin-top: 2rem;
+}
+
+
+.appointments-main-container{
+    margin-top: 2rem;
+}
+
+.specific-appointments-container{
+    width: 70vw;
+    height: 60vh;
+    border-radius: 0.5rem;
+    background-color: #f2f2f2;
+    padding: 1em;
+}
+
+.appointment-options{
+    display: flex;
+    padding-bottom: 0.5rem;
+}
+
+.appointment-headers{
+    padding: 4rem 1rem;
+    transition: all 0.5s; 
+    cursor: pointer;
+}
+
+.appointment-headers:hover{
+    transform: scale(1.05);
+    transition: all 0.5s;
+}
+
+.btn-chosen{
+    width: 205px;
+    height: 45px;
+    font-weight: 700;
+    border-radius: 5px;
+    border-color: transparent;
+    background-color: #1F4276;
+    color: #F1F1F1;
+}
+
+.btn-not-chosen{
+    width: 205px;
+    height: 45px;
+    font-weight: 500;
+    border-radius: 5px;
+    border-color: transparent;
+    background-color: #CAE9FF;
+    color: #003459;
+    transition: all 0.5s;
+}
+
+.btn-not-chosen:hover{
+    background-color: #003459;
+    color: #F1F1F1;
+    transition: all 0.5s;
+}
+
+.appointment-requests-header{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: left;
+}
+
+.appointment-requests-header span{
+    margin: 1rem 0rem 1rem 3rem;
+    font-size: 1rem;
+    font-weight: 500;color: #8B8B8B;
+}
+
+
+
+.appointee-container{
+    display: flex;
+    background-color: #EBEBEB;
+    justify-content: space-around;
+    height: 2.25rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    transition: all 0.5s ease;
+    
+}
+.appointee-container:hover{
+    box-shadow: 0 0 7px #8B8B8B;
+    transition: all 0.5s ease;
+}
+
+.appointee-container span, .appointee-container div{
+    align-self: center;
+    color: #272727;
+}
+
+.appointee-container a{
+    align-self: center;
+}
+
+.appointee-container button:hover{
+    background-color: #2C6839;
+    transition: all 0.5s;   
+}
+
+.appointee-name{
+    font-weight: 600;
+}
+
+.appointee-details{
+    color: #7F7B82;
+}
+
+
+/*Appointment Details Styles*/
+.details-container{
+    margin-left: 19rem;
+    background-color: #F9F9F9;
+}
+
+/* Checkbox */
+.checkbox-wrapper-30 .checkbox {
+  --bg: #fff;
+  --brdr: #d1d6ee;
+  --brdr-actv: #575a64;
+  --brdr-hovr: #bbc1e1;
+  --dur: calc((var(--size, 2)/2) * 0.6s);
+  display: inline-block;
+  width: calc(var(--size, 1) * 22px);
+  position: relative;
+}
+.checkbox-wrapper-30 .checkbox:after {
+  content: "";
+  width: 100%;
+  padding-top: 100%;
+  display: block;
+}
+.checkbox-wrapper-30 .checkbox > * {
+  position: absolute;
+}
+.checkbox-wrapper-30 .checkbox input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
+  background-color: var(--bg);
+  border-radius: calc(var(--size, 1) * 4px);
+  border: calc(var(--newBrdr, var(--size, 1)) * 1px) solid;
+  color: var(--newBrdrClr, var(--brdr));
+  outline: none;
+  margin: 0;
+  padding: 0;
+  transition: all calc(var(--dur) / 3) linear;
+}
+.checkbox-wrapper-30 .checkbox input:hover,
+.checkbox-wrapper-30 .checkbox input:checked {
+  --newBrdr: calc(var(--size, 1) * 2);
+}
+.checkbox-wrapper-30 .checkbox input:hover {
+  --newBrdrClr: var(--brdr-hovr);
+}
+.checkbox-wrapper-30 .checkbox input:checked {
+  --newBrdrClr: var(--brdr-actv);
+  transition-delay: calc(var(--dur) /1.3);
+}
+.checkbox-wrapper-30 .checkbox input:checked + svg {
+  --dashArray: 16 93;
+  --dashOffset: 109;
+}
+.checkbox-wrapper-30 .checkbox svg {
+  fill: none;
+  left: 0;
+  pointer-events: none;
+  stroke: var(--stroke, var(--border-active));
+  stroke-dasharray: var(--dashArray, 93);
+  stroke-dashoffset: var(--dashOffset, 94);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2px;
+  top: 0;
+  transition: stroke-dasharray var(--dur), stroke-dashoffset var(--dur);
+}
+.checkbox-wrapper-30 .checkbox svg,
+.checkbox-wrapper-30 .checkbox input {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+
+
+/* Status View */
+.pending-status-view{
+    padding: 0.2rem 1.80rem;
+    background-color: #DBDBDB;
+    color: #272727;
+    border-radius: 1rem;
+}
+
+.confirmed-status-view{
+    padding: 0.2rem 1.25rem;
+    background-color: #A3F5B4;
+    color: #206D30;
+    border-radius: 1rem;
+}
+
+.denied-status-view{
+    padding: 0.2rem 1.50rem;
+    background-color: #FFBAC6;
+    border-radius: 1rem;
+}
+.denied-status-view span{
+    color: #E02847;
+}
+
+/* Header Styles */
+.tab-header {
+    cursor: pointer;
+    padding: 10px;
+    border-bottom: 2px solid transparent;
+
+}
+
+.tab-header.active {
+    padding: 10px;
+    background-color: #F1F1F1;
+    border-radius: 10px;
+    cursor: pointer;
+
+    font-weight: 700;
+    color: #003459;
+}
+
+.tab-header:hover {
+    background-color: #f0f0f0; 
+    transition: all 0.5s;
+}
+
+.appointment-history-header{
+    display: flex;
+    justify-content: space-evenly;
+
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    
+}
+.empty-state-message {
+    display: flex;
+    font-size: 1.5rem;
+    margin-top: 5rem;
+    justify-content: center;
+    align-items: center;
+    color: #7d7d7d; /* Adjust color to your preference */
+
+}
+
+.empty-state-message2 {
+    display: flex;
+    font-size: 1rem;
+    justify-content: center;
+    align-items: center;
+    color: #888; /* Adjust color to your preference */
+}
+
+
+
+.add-appointment-link:hover {
+    text-decoration: underline;
+}
+
+
+.add-appointment-link {
+    display: flex;
+    font-size: 1rem;
+    color: #29569a; /* Bootstrap primary blue color */
+    text-decoration: none;
+    margin-left: 0.25rem;
+    cursor: pointer;
+}
+
+.add-appointment-link:hover {
+    text-decoration: underline;
+}

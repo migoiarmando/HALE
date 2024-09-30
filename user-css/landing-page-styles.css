@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Inter, sans-serif;
+
+  /* Disable the highlight */
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+a {
+  text-decoration: none;
+  color: #f5f5f5;
+}
+body {
+  background-color: #f5f5f5;
+}
+
+/*nav-styles*/
+
+.navigation-container {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  background-color: #003459;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.time-style {
+  font-size: 20px;
+  padding: 1rem;
+}
+
+#pst-container {
+  color: #f1f1f1;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem 0 0;
+}
+
+.logo-container {
+  color: #002e4f;
+  transition: all 0.5s;
+  transform: scale(0.8);
+}
+
+.logo-container:hover {
+  transform: scale(0.7);
+  opacity: 0.2;
+  transition: all 0.5s;
+}
+.main-logo-container {
+  transform: scale(0.8);
+
+  display: flex;
+}
+
+/*menu-styles*/
+
+.menu-container {
+  background-color: #002e4f;
+  margin-top: 4rem;
+  position: fixed;
+  min-width: 220px;
+  min-height: 100vh;
+  color: #f1f1f1;
+}
+.nav-aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: sticky;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+  gap: 3px;
+}
+
+.nav-aside-hr-line {
+  border-width: none;
+  border-color: #f1f1f1;
+  width: 170px;
+}
+
+.nav-aside-headers {
+  font-weight: 400;
+  color: #b3b3b3;
+  font-size: 12px;
+  padding-left: 0.5rem;
+}
+
+.menu-section {
+  margin: 2rem;
+}
+
+.menu-items {
+  padding: 0.7rem;
+  transition: all 0.5s;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.menu-items:hover {
+  background-color: #012239;
+  transition: all 0.5s;
+}
+
+.menu-icons {
+  padding-right: 0.5rem;
+}
+
+.general-section {
+  margin: 2rem;
+  min-width: 197.312px;
+}
+
+/*landing-styles*/
+.footnote {
+  font-size: 10px;
+  padding: 0 0 0 1rem;
+}
+
+.landing-page {
+  display: flex;
+}
+
+.upcoming-appointments-container {
+  width: 300px;
+  min-height: 250px;
+  background-color: #ffffff;
+
+  margin: 1rem;
+
+  border-radius: 20px;
+  border: #002e4f solid 2px;
+  overflow: hidden;
+}
+
+.announcements-container {
+  width: 300px;
+  height: 250px;
+  background-color: #ffffff;
+  margin: 1rem;
+  border-radius: 20px;
+  border: #002e4f solid 2px;
+  overflow: hidden;
+}
+
+.right-side {
+  margin: 0.5rem;
+  margin-top: 4rem;
+}
+
+.right-side-items {
+  display: flex;
+  color: #ffb800;
+  background-color: #003459;
+  font-size: 14px;
+  padding: 0.5rem 0 0.5rem 1rem;
+}
+
+.headers {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0 1rem 0;
+}
+.main-header {
+  color: #404040;
+  font-size: 14px;
+  margin-left: 19rem;
+}
+.sub-header {
+  color: #1f4276;
+  font-size: 32px;
+  margin-left: 19rem;
+}
+.landing-health-staff-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/*appointment details*/
+.appointment-details {
+  padding-left: 2rem;
+}
+
+.appointment-details .appointment-number {
+  font-size: 96px;
+  font-weight: 600;
+  color: #1f4276;
+}
+
+.appointment-details .appointment-phrase {
+  font-size: 24px;
+  font-weight: 500;
+  color: #1f4276;
+}
+
+.view-all {
+  font-size: 12px;
+  transition: all 0.5s;
+}
+
+.view-all:hover {
+  transform: translateX(10px);
+  transition: all 0.5s;
+}
+
+.user-profile {
+  background-color: #ffffff;
+  width: 6.5rem;
+  height: 6.5rem;
+  border-radius: 999px;
+  margin: 3rem 0 1rem 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

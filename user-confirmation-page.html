@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hale | Confirm Appointment</title>
+    <link rel="stylesheet" href="user-css/landing-page-styles.css" />
+    <link rel="stylesheet" href="user-css/confirm-appointments.css" />
+    <link rel="stylesheet" href="user-css/book-appointments.css" />
+    <link rel="stylesheet" href="user-css/transitions.css" />
+    <link rel="icon" href="assets/hale-logo.svg" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body>
+    <!--Top Navigation-->
+    <div class="navigation-container">
+      <div class="main-logo-container" alt="">
+        <img src="assets/adnu-white-nav.svg" />
+        <div class="logo-container">
+          <a href="user-landing-page.html">
+            <img src="./assets/hale-logo-nav.svg" />
+          </a>
+        </div>
+      </div>
+
+      <div id="pst-container">
+        <div id="pst-time" class="time-style"></div>
+        <a href="">
+          <img
+            src="assets/notification-icon.svg"
+            class="logo-container"
+            alt=""
+          />
+        </a>
+        <a href="user-profile-page.html">
+          <img src="assets/account-icon.svg" alt="" class="logo-container" />
+        </a>
+      </div>
+    </div>
+
+    <!--Side Menu-->
+    <div class="menu-container">
+      <div class="nav-aside">
+        <div class="user-profile" id="profile-picture-preview"></div>
+
+        <!-- use database here for name and ID -->
+        <div class="user-info">
+          <span id="full-name" style="font-weight: 700">User</span>
+          <span style="font-weight: 200">Student</span>
+          <span id="user-id">ID: 202200123</span>
+        </div>
+
+        <hr class="nav-aside-hr-line" />
+
+        <div class="menu-section">
+          <span class="nav-aside-headers">MENU</span>
+          <a href="user-landing-page.html">
+            <div class="menu-items" id="home-link">
+              <img src="assets/menu-icons/home.svg" class="menu-icons" alt="" />
+              <span>Home</span>
+            </div>
+          </a>
+
+          <a href="appointment-history.html">
+            <div class="menu-items" id="appointments-link">
+              <img
+                src="assets/menu-icons/appointments.svg"
+                class="menu-icons"
+                alt=""
+              />
+              <span>Appointments</span>
+            </div>
+          </a>
+
+          <a href="404.html">
+            <div class="menu-items">
+              <img
+                src="assets/menu-icons/document.svg"
+                class="menu-icons"
+                alt=""
+              />
+              <span>Submit Documents</span>
+            </div>
+          </a>
+        </div>
+
+        <hr class="nav-aside-hr-line" />
+
+        <div class="general-section">
+          <span class="nav-aside-headers">GENERAL</span>
+          <a href="user-profile-page.html">
+            <div class="menu-items">
+              <img
+                src="assets/menu-icons/setting.svg"
+                class="menu-icons"
+                alt=""
+              />
+              <span>Settings</span>
+            </div>
+          </a>
+
+          <a href="about-hale.html">
+            <div class="menu-items">
+              <img src="assets/menu-icons/help.svg" class="menu-icons" alt="" />
+              <span>About</span>
+            </div>
+          </a>
+
+          <a href="#" id="logout-button">
+            <div class="menu-items">
+              <img
+                src="assets/menu-icons/logout.svg"
+                class="menu-icons"
+                alt=""
+              />
+              <span>Logout</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Confirmation Container -->
+    <div class="confirm-appointment-container">
+      <div class="confirm-appointment">
+        <span class="m-header">Appointments</span> <br />
+        <span class="s-header">APPOINTMENT CONFIRMATION</span>
+        <br />
+        <br />
+        <p>
+          Your appointment details are listed below. Please review them
+          carefully. If any changes are necessary, simply click the edit button
+        </p>
+      </div>
+
+      <div class="details">
+        <div class="details-header-container">
+          <img src="/assets/process-info.svg" alt="" />
+          <span class="detail-heading">Appointment Details</span>
+        </div>
+      </div>
+
+      <!-- User Details Section -->
+      <div class="subhead">User Details</div>
+      <div class="user-details">
+        <div class="details-container">
+          <div class="user-container">
+            <div class="info-container">
+              <div class="strong"><strong>Name</strong> <br /></div>
+              <div class="user-name">User</div>
+            </div>
+            <div class="info-container">
+              <div class="strong"><strong>ID Number</strong> <br /></div>
+              <div class="user-id">202200123</div>
+            </div>
+            <div class="info-container">
+              <div class="strong"><strong>Email</strong> <br /></div>
+              <div class="user-email">jcruz@gbox.adnu.edu.ph</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service Details Section -->
+      <div class="subhead-2">Service Details</div>
+      <div class="service-details">
+        <div class="details-container">
+          <div class="service-info">
+            <div class="info-container">
+              <div class="strong"><strong>Service</strong> <br /></div>
+              <div class="service-type">Medical Checkup</div>
+            </div>
+            <div class="info-container">
+              <div class="strong"><strong>Date</strong> <br /></div>
+              <div class="appointment-date">May 15, 2024</div>
+            </div>
+            <div class="info-container">
+              <div class="strong"><strong>Time</strong> <br /></div>
+              <div class="appointment-time">9:00 - 9:30 A.M</div>
+            </div>
+          </div>
+          <a
+            href="user-appointment-page.html"
+            class="edit-button"
+            onclick="saveCurrentAppointment()"
+          >
+            <u>Edit</u>
+          </a>
+        </div>
+      </div>
+
+      <!-- Action Buttons -->
+<div class="confirmation-action-buttons">
+  <div class="cancel-container">
+      <a href="user-appointment-page.html" onclick="saveCurrentAppointment()">
+          <button class="go-back-button">GO BACK</button>
+      </a>
+  </div>
+  <div class="next-container">
+      <a href="javascript:void(0);">
+          <button class="next-button" onclick="showPopup('submit')">SUBMIT</button>
+      </a>
+  </div>
+</div>
+
+<!-- Popup Modal -->
+<div id="confirmationPopup" class="popup-modal">
+  <div class="popup-content">
+      <p><strong>Are you sure?</strong></p>
+      <p id="popupMessage"></p>
+      <div class="popup-buttons">
+          <button id="confirmButton" class="confirm-button"></button>
+          <button class="cancel-button" onclick="hidePopup()">NO</button>
+      </div>
+  </div>
+</div>
+
+    <script src="scripts/clock-script.js"></script>
+    <script src="scripts/appointments.js"></script>
+    <script src="scripts/load-user-info.js"></script>
+    <script src="scripts/appointments-checker.js"></script>
+    <script src="scripts/profile-picture-updater.js"></script>
+  </body>
+</html>
